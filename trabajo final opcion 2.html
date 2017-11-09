@@ -12,12 +12,20 @@
 </head>
 
 <style>
-
+    .logo {
+        max-width: 50%
+    }
+    
+    @media (max-width: 767px) {
+        .logo {
+            max-width: 40%
+        }
+    }
 </style>
 
 
 <body>
-    <div class="container sticky-top">
+    <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky">
             <a class="navbar-brand" href="#">start Bootstrap</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,18 +56,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <nav class="nav flex-column">
-                    <h4>Tienda</h4>
+                <nav class="nav flex-column sticky-top" style="background-color:aliceblue ; padding:15px">
+                    <br>
+                    <img class="img-fluid logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="">
                     <a class="nav-link active" href="#">Active</a>
                     <a class="nav-link" href="#">Link</a>
                     <a class="nav-link" href="#">Link</a>
                     <a class="nav-link disabled" href="#">Disabled</a>
                 </nav>
             </div>
-            <div class="col-md-9">
-                <img src="https://dummyimage.com/900x350/000/fff" alt="">
+            <div class="col-md-9" style="padding:10px">
+                <img class="img-fluid" src="https://dummyimage.com/900x350/000/fff" alt="">
 
-                <section class="" style="padding-top:20px; padding-bottom:20px">
+                <section class="container" style="padding-top:20px; padding-bottom:20px">
                     <h2>Product Name</h2>
                     <h3>$24.99</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et rhoncus arcu, non viverra justo. Pellentesque malesuada id orci sit amet efficitur. Nullam maximus libero diam, ac iaculis dolor consectetur non. Maecenas placerat nisi at magna sagittis
@@ -67,10 +76,13 @@
                     tortor, aliquet a lorem nec, mattis mattis arcu. Donec nec neque sed lorem luctus volutpat id et arcu.
                 </section>
 
-                <section style="background-color:rgba(128, 128, 128, 0.44); padding:15px">
-                    <h3>Product Reviews</h3>
+                <section class="border border-success rounded-top" style="background-color:rgba(128, 128, 128, 0.44); padding:15px">
+                    <h3> Product Reviews </h3>
+                </section>
+                <section class="border border-success" style="padding:15px">
                     <br> Proin elementum leo non risus congue molestie. Donec posuere vulputate sapien. Sed nec efficitur dolor. Duis tincidunt ut massa et viverra. Ut sollicitudin vehicula leo, quis vehicula sem aliquet ac. Phasellus lectus tortor, aliquet
                     a lorem nec.
+                    <br>
                 </section>
             </div>
         </div>
